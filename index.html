@@ -1,0 +1,635 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="CampusConnect helps college students discover campus events, join activities and connect with their student community.">
+
+    <title>CampusConnect | Discover Your Campus</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<!-- HEADER / NAVIGATION -->
+<header class="header">
+    <nav class="navbar" aria-label="Main navigation">
+
+        <a href="#home" class="brand" aria-label="CampusConnect home">
+            <span class="brand-icon" aria-hidden="true">CC</span>
+            <span class="brand-text">Campus<span>Connect</span></span>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#academic">Academic</a></li>
+            <li><a href="#sports">Sports</a></li>
+            <li><a href="#social">Social</a></li>
+            <li><a href="#my-events">My Events</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+<main>
+
+<!-- HERO / HOME -->
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <p class="eyebrow">YOUR CAMPUS, YOUR COMMUNITY</p>
+
+        <h1>
+            Discover events.<br>
+            <span>Connect with students.</span>
+        </h1>
+
+        <p class="hero-description">
+            Your campus journey is about more than lectures.
+            Discover exciting activities, meet new people,
+            develop your skills and become part of your campus community.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#events" class="btn">Explore Events</a>
+            <a href="#my-events" class="btn btn-outline">My Events</a>
+        </div>
+
+        <div class="hero-highlights">
+            <div>
+                <strong>Learn</strong>
+                <span>Grow your skills</span>
+            </div>
+            <div>
+                <strong>Participate</strong>
+                <span>Explore activities</span>
+            </div>
+            <div>
+                <strong>Connect</strong>
+                <span>Meet your community</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="home-gallery" aria-label="Campus life gallery">
+        <img src="_images/homepage 1.jpg"
+             alt="Students enjoying university campus life">
+
+        <img src="_images/homepage 2.jpg"
+             alt="University campus buildings and surroundings">
+
+        <img src="_images/homepage 3.jpg"
+             alt="Students meeting and working together">
+
+        <img src="_images/homepage 4.jpg"
+             alt="Students participating in campus activities">
+    </div>
+
+</section>
+
+
+<!-- EVENTS INTRODUCTION -->
+<section id="events" class="section events-section">
+
+    <div class="section-heading">
+        <p class="eyebrow">FIND YOUR NEXT EXPERIENCE</p>
+        <h2 class="section-title">Explore Campus Events</h2>
+
+        <p class="section-subtitle">
+            Whether you want to learn something new, enjoy sports
+            or meet new friends, there is something for you.
+        </p>
+    </div>
+
+    <!-- EVENT SEARCH AND FILTER -->
+    <div class="event-controls">
+
+        <div class="search-box">
+            <label for="event-search">Search events</label>
+            <input type="search"
+                   id="event-search"
+                   placeholder="Search by event name..."
+                   autocomplete="off">
+        </div>
+
+        <div class="filter-box">
+            <label for="event-filter">Filter by category</label>
+            <select id="event-filter">
+                <option value="all">All events</option>
+                <option value="academic">Academic</option>
+                <option value="sports">Sports</option>
+                <option value="social">Social</option>
+            </select>
+        </div>
+
+    </div>
+
+
+    <!-- ACADEMIC EVENTS -->
+    <section id="academic" class="category-section">
+
+        <div class="category-heading">
+            <div>
+                <p class="eyebrow">LEARN AND GROW</p>
+                <h3 class="category-title">Academic Events</h3>
+                <p>Develop your knowledge and learn with fellow students.</p>
+            </div>
+            <span class="category-count">06 Events</span>
+        </div>
+
+        <div class="event-grid">
+
+            <!-- Academic Event 1 -->
+            <article class="event-card" data-category="academic">
+                <div class="event-image">
+                    <img src="_images/study group 4.jpg"
+                         alt="Students studying together in a group"
+                         loading="lazy">
+                    <span class="event-tag">Academic</span>
+                </div>
+
+                <div class="event-info">
+                    <p class="event-date">22 October 2026</p>
+                    <h4>Study Group Meetup</h4>
+
+                    <p class="event-description">
+                        Study with fellow students, share ideas
+                        and prepare for upcoming assessments.
+                    </p>
+
+                    <p class="event-location">
+                        <span aria-hidden="true">⌖</span>
+                        Learning Commons
+                    </p>
+
+                    <button type="button" class="btn details-btn"
+                            data-event="study">
+                        View Details
+                    </button>
+                </div>
+            </article>
+
+            <!-- Academic Event 2 -->
+            <article class="event-card" data-category="academic">
+                <div class="event-image">
+                    <img src="_images/study group 2.jpg"
+                         alt="Students taking part in an academic workshop"
+                         loading="lazy">
+                    <span class="event-tag">Academic</span>
+                </div>
+
+                <div class="event-info">
+                    <p class="event-date">29 October 2026</p>
+                    <h4>Academic Skills Workshop</h4>
+
+                    <p class="event-description">
+                        Improve your research, time management
+                        and study techniques in a supportive environment.
+                    </p>
+
+                    <p class="event-location">
+                        <span aria-hidden="true">⌖</span>
+                        Student Learning Centre
+                    </p>
+
+                    <button type="button" class="btn details-btn"
+                            data-event="workshop">
+                        View Details
+                    </button>
+                </div>
+            </article>
+
+            <!-- Academic Event 3 -->
+            <article class="event-card" data-category="academic">
+                <div class="event-image">
+                    <img src="_images/study group 6.jpg"
+                         alt="Students collaborating on a group assignment"
+                         loading="lazy">
+                    <span class="event-tag">Academic</span>
+                </div>
+
+                <div class="event-info">
+                    <p class="event-date">3 November 2026</p>
+                    <h4>Group Assignment Workshop</h4>
+
+                    <p class="event-description">
+                        Learn how to divide tasks, share ideas and
+                        work effectively with classmates on group projects.
+                    </p>
+
+                    <p class="event-location">
+                        <span aria-hidden="true">⌖</span>
+                        Campus Library
+                    </p>
+
+                    <button type="button" class="btn details-btn"
+                            data-event="groupwork">
+                        View Details
+                    </button>
+                </div>
+            </article>
+
+            <!-- Academic Event 4 -->
+            <article class="event-card" data-category="academic">
+                <div class="event-image">
+                    <img src="_images/study group 1.jpg"
+                         alt="A student presenting an academic project"
+                         loading="lazy">
+                    <span class="event-tag">Academic</span>
+                </div>
+
+                <div class="event-info">
+                    <p class="event-date">10 November 2026</p>
+                    <h4>Presentation Skills Session</h4>
+
+                    <p class="event-description">
+                        Build confidence and improve your public speaking
+                        and academic presentation skills.
+                    </p>
+
+                    <p class="event-location">
+                        <span aria-hidden="true">⌖</span>
+                        Lecture Hall 2
+                    </p>
+
+                    <button type="button" class="btn details-btn"
+                            data-event="presentations">
+                        View Details
+                    </button>
+                </div>
+            </article>
+
+            <!-- Academic Event 5 -->
+            <article class="event-card" data-category="academic">
+                <div class="event-image">
+                    <img src="_images/study group 5.jpg"
+                         alt="Students preparing notes for examinations"
+                         loading="lazy">
+                    <span class="event-tag">Academic</span>
+                </div>
+
+                <div class="event-info">
+                    <p class="event-date">17 November 2026</p>
+                    <h4>Exam Preparation Workshop</h4>
+
+                    <p class="event-description">
+                        Discover effective revision methods, study
+                        planning and time-management techniques.
+                    </p>
+
+                    <p class="event-location">
+                        <span aria-hidden="true">⌖</span>
+                        Student Learning Centre
+                    </p>
+
+                    <button type="button" class="btn details-btn"
+                            data-event="examprep">
+                        View Details
+                    </button>
+                </div>
+            </article>
+
+            <!-- Academic Event 6 -->
+            <article class="event-card" data-category="academic">
+                <div class="event-image">
+                    <img src="_images/study group 3.jpg"
+                         alt="Students learning digital research skills"
+                         loading="lazy">
+                    <span class="event-tag">Academic</span>
+                </div>
+
+                <div class="event-info">
+                    <p class="event-date">24 November 2026</p>
+                    <h4>Digital Skills and Research</h4>
+
+                    <p class="event-description">
+                        Learn to use digital tools and identify reliable
+                        online sources for academic research.
+                    </p>
+
+                    <p class="event-location">
+                        <span aria-hidden="true">⌖</span>
+                        Computer Lab
+                    </p>
+
+                    <button type="button" class="btn details-btn"
+                            data-event="digitalskills">
+                        View Details
+                    </button>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+
+    <!-- SPORTS EVENTS -->
+    <section id="sports" class="category-section">
+
+        <div class="category-heading">
+            <div>
+                <p class="eyebrow">PLAY AND PARTICIPATE</p>
+                <h3 class="category-title">Sports Events</h3>
+                <p>Stay active, enjoy teamwork and meet other students.</p>
+            </div>
+            <span class="category-count">03 Events</span>
+        </div>
+
+        <div class="event-grid">
+
+            <!-- Sports Event 1 -->
+            <article class="event-card" data-category="sports">
+                <div class="event-image">
+                    <img src="_images/sport 2.jpg"
+                         alt="Students playing football on a field"
+                         loading="lazy">
+                    <span class="event-tag">Sports</span>
+                </div>
+
+                <div class="event-info">
+                    <p class="event-date">24 October 2026</p>
+                    <h4>Campus Football Day</h4>
+
+                    <p class="event-description">
+                        Join fellow students for friendly football
+                        matches and a day of teamwork.
+                    </p>
+
+                    <p class="event-location">
+                        <span aria-hidden="true">⌖</span>
+                        Main Sports Field
+                    </p>
+
+                    <button type="button" class="btn details-btn"
+                            data-event="football">
+                        View Details
+                    </button>
+                </div>
+            </article>
+
+            <!-- Sports Event 2 -->
+            <article class="event-card" data-category="sports">
+                <div class="event-image">
+                    <img src="_images/sport 1.jpg"
+                         alt="Students participating in athletics"
+                         loading="lazy">
+                    <span class="event-tag">Sports</span>
+                </div>
+
+                <div class="event-info">
+                    <p class="event-date">31 October 2026</p>
+                    <h4>Campus Athletics Day</h4>
+
+                    <p class="event-description">
+                        Celebrate participation, fitness and
+                        friendly competition with your campus community.
+                    </p>
+
+                    <p class="event-location">
+                        <span aria-hidden="true">⌖</span>
+                        Athletics Track
+                    </p>
+
+                    <button type="button" class="btn details-btn"
+                            data-event="athletics">
+                        View Details
+                    </button>
+                </div>
+            </article>
+
+            <!-- Sports Event 3 -->
+            <article class="event-card" data-category="sports">
+                <div class="event-image">
+                    <img src="_images/sport 3.jpg"
+                         alt="Students participating in team sports"
+                         loading="lazy">
+                    <span class="event-tag">Sports</span>
+                </div>
+
+                <div class="event-info">
+                    <p class="event-date">7 November 2026</p>
+                    <h4>Team Sports Meetup</h4>
+
+                    <p class="event-description">
+                        Take part in enjoyable team activities,
+                        build friendships and practise collaboration.
+                    </p>
+
+                    <p class="event-location">
+                        <span aria-hidden="true">⌖</span>
+                        Campus Recreation Area
+                    </p>
+
+                    <button type="button" class="btn details-btn"
+                            data-event="teamsports">
+                        View Details
+                    </button>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+
+    <!-- SOCIAL EVENTS -->
+    <section id="social" class="category-section">
+
+        <div class="category-heading">
+            <div>
+                <p class="eyebrow">MEET AND CONNECT</p>
+                <h3 class="category-title">Social Events</h3>
+                <p>Build friendships and enjoy life beyond the classroom.</p>
+            </div>
+            <span class="category-count">03 Events</span>
+        </div>
+
+        <div class="event-grid">
+
+            <!-- Social Event 1 -->
+            <article class="event-card" data-category="social">
+                <div class="event-image">
+                    <img src="_images/social event 1.jpg"
+                         alt="Students talking at a campus social meetup"
+                         loading="lazy">
+                    <span class="event-tag">Social</span>
+                </div>
+
+                <div class="event-info">
+                    <p class="event-date">27 October 2026</p>
+                    <h4>Student Social Meetup</h4>
+
+                    <p class="event-description">
+                        Meet new people, share interests and
+                        enjoy a friendly campus gathering.
+                    </p>
+
+                    <p class="event-location">
+                        <span aria-hidden="true">⌖</span>
+                        Student Centre
+                    </p>
+
+                    <button type="button" class="btn details-btn"
+                            data-event="meetup">
+                        View Details
+                    </button>
+                </div>
+            </article>
+
+            <!-- Social Event 2 -->
+            <article class="event-card" data-category="social">
+                <div class="event-image">
+                    <img src="_images/social event 3.jpg"
+                         alt="Students enjoying a campus celebration"
+                         loading="lazy">
+                    <span class="event-tag">Social</span>
+                </div>
+
+                <div class="event-info">
+                    <p class="event-date">5 November 2026</p>
+                    <h4>Campus Celebration</h4>
+
+                    <p class="event-description">
+                        Enjoy a welcoming gathering with
+                        activities, conversation and student spirit.
+                    </p>
+
+                    <p class="event-location">
+                        <span aria-hidden="true">⌖</span>
+                        Campus Courtyard
+                    </p>
+
+                    <button type="button" class="btn details-btn"
+                            data-event="celebration">
+                        View Details
+                    </button>
+                </div>
+            </article>
+
+            <!-- Social Event 3 -->
+            <article class="event-card" data-category="social">
+                <div class="event-image">
+                    <img src="_images/social event 2.jpg"
+                         alt="Students connecting during a social gathering"
+                         loading="lazy">
+                    <span class="event-tag">Social</span>
+                </div>
+
+                <div class="event-info">
+                    <p class="event-date">12 November 2026</p>
+                    <h4>Make New Connections</h4>
+
+                    <p class="event-description">
+                        Connect with students who share your
+                        interests and discover new campus communities.
+                    </p>
+
+                    <p class="event-location">
+                        <span aria-hidden="true">⌖</span>
+                        Campus Common Room
+                    </p>
+
+                    <button type="button" class="btn details-btn"
+                            data-event="connections">
+                        View Details
+                    </button>
+                </div>
+            </article>
+
+        </div>
+
+        <p id="no-events" class="empty-message" hidden>
+            No events match your search. Try another keyword or category.
+        </p>
+
+    </section>
+
+</section>
+
+
+<!-- MY EVENTS -->
+<section id="my-events" class="section my-events-section">
+
+    <div class="section-heading">
+        <p class="eyebrow">YOUR CAMPUS PLANS</p>
+        <h2 class="section-title">My Events</h2>
+
+        <p class="section-subtitle">
+            Keep track of the activities you choose to join.
+            Your registered events will appear here.
+        </p>
+    </div>
+
+    <div id="registration-message"
+         class="registration-message"
+         role="status"
+         aria-live="polite"></div>
+
+    <div id="registered-events" class="event-grid">
+        <p class="empty-message">
+            You haven't registered for any events yet.
+            Explore the events above to get started.
+        </p>
+    </div>
+
+</section>
+
+
+<!-- COMMUNITY CALL TO ACTION -->
+<section class="community-section">
+    <div class="community-content">
+        <p class="eyebrow">YOUR EXPERIENCE STARTS HERE</p>
+
+        <h2>Be part of your campus community.</h2>
+
+        <p>
+            Explore opportunities, discover your interests
+            and make your student experience more meaningful.
+        </p>
+
+        <a href="#events" class="btn">Find an Event</a>
+    </div>
+</section>
+
+</main>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+
+    <a href="#home" class="brand footer-brand">
+        <span class="brand-icon" aria-hidden="true">CC</span>
+        <span class="brand-text">Campus<span>Connect</span></span>
+    </a>
+
+    <p>Discover your campus. Find your community.</p>
+
+    <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#academic">Academic</a>
+        <a href="#sports">Sports</a>
+        <a href="#social">Social</a>
+        <a href="#my-events">My Events</a>
+    </div>
+
+    <p class="copyright">
+        &copy; 2026 CampusConnect | HCI Student Prototype
+    </p>
+
+</footer>
+
+</body>
+</html>
